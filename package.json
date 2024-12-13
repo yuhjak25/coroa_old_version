@@ -1,0 +1,33 @@
+{
+  "name": "coroa",
+  "version": "v2.1.0",
+  "description": "Discord bot",
+  "main": "app.js",
+  "type": "commonjs",
+  "types": "dist/app.d.ts",
+  "scripts": {
+    "start": "node ./dist/app.js",
+    "build": "npm install && tsc",
+    "dev": "ts-node-dev --respawn --transpile-only --poll ./src/app.ts"
+  },
+  "keywords": [],
+  "author": "yuhjak",
+  "license": "ISC",
+  "dependencies": {
+    "@anishshobith/deeptype": "^1.1.0",
+    "canvas": "^2.11.2",
+    "discord-html-transcripts": "^3.2.0",
+    "discord.js": "^14.15.3",
+    "dotenv": "^16.4.5",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.5.2",
+    "socialpulse": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.2.0",
+    "@types/pg": "^8.11.6",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.5.4"
+  }
+}

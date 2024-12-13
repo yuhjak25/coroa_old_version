@@ -1,0 +1,333 @@
+{
+  "$global": {
+    "footer": {
+      "spanish": "Desarrollado con 💖 por yuhjak25.",
+      "english": "Developed with 💖 by yuhjak25."
+    },
+    "colors": {
+      "red": {
+        "spanish": "Rojo",
+        "english": "Red"
+      },
+      "green": {
+        "spanish": "Verde",
+        "english": "Green"
+      },
+      "blue": {
+        "spanish": "Azul",
+        "english": "Blue"
+      },
+      "yellow": {
+        "spanish": "Amarillo",
+        "english": "Yellow"
+      },
+      "black": {
+        "spanish": "Negro",
+        "english": "Black"
+      },
+      "white": {
+        "spanish": "Blanco",
+        "english": "White"
+      }
+    }
+  },
+
+  "$commands": {
+    "$config.ts": {
+      "embeds": {
+        ".setTitle": {
+          "spanish": "Ajustes de ${app.username} en ${guild?.name}",
+          "english": "Settings of ${app.username} on ${guild?.name}"
+        },
+        ".setTitleColor": {
+          "spanish": "Color de los mensajes embeds",
+          "english": "Color of the embed messages"
+        },
+        ".setTitleLang": {
+          "spanish": "Idioma de ${app.username}",
+          "english": "Language of ${app.username}"
+        },
+        ".setTitleStaffRole": {
+          "spanish": "Rol(es) de administrador",
+          "english": "Rol(es) of the administrator"
+        },
+        ".setTitleBlockChannel": {
+          "spanish": "Canales bloqueados",
+          "english": "Block channels"
+        },
+        ".setDescription": {
+          "spanish": "`🫡` ¡Hola! Y bienvenido al panel de ajustes de <@${app.id}>.\nSi necesitas ayuda con alguna función o tienes dudas, únete a nosotros en nuestro [servidor de soporte](https:/dsc.gg/Coroa).",
+          "english": "`🫡` Hello! And welcome to the setting panel of <@${app.id}>.\nIf you need help with any function or have doubts, join us in our [support server](https:/dsc.gg/Coroa)."
+        },
+        ".setDescriptionColor": {
+          "spanish": "Elige un color del selector con el cual se mostrarán los mensajes embeds.",
+          "english": "Choose a color from the selector to be used for the embed messages."
+        },
+        ".setDescriptionLang": {
+          "spanish": "Elige el idioma del selector con el cual <@${app.id}> responderá.",
+          "english": "Choose the language in which <@${app.id}> will respond."
+        },
+        ".setDescriptionStaffRole": {
+          "spanish": "Elige el rol(es) de administrador del selector.",
+          "english": "Choose the role(s) of the administrator from the selector."
+        },
+        ".setDescriptionBlockChannel": {
+          "spanish": "<@${app.id}> no responderá a los comandos en los canales bloqueados a menos que el usuario tenga permisos de administrador o roles específicos.",
+          "english": "<@${app.id}> won't respond to commands in blocked channels unless the user has administrator permissions or specific roles."
+        }
+      },
+      "error": {
+        "spanish": "> `🚨` Hubo un error mientras se configuraba <@${app.id}>.",
+        "english": "> `🚨` There was an error while configuring <@${app.id}>."
+      },
+      "buttons": {
+        "label": {
+          "language": {
+            "spanish": "Idioma",
+            "english": "Language"
+          },
+          "rol": {
+            "spanish": "Rol de admins",
+            "english": "Staff rol"
+          },
+          "block-channels": {
+            "spanish": "Canales bloqueados",
+            "english": "Block channels"
+          },
+          "select-all-channels": {
+            "spanish": "Seleccionar todos",
+            "english": "Select all"
+          },
+          "remove-all-channels": {
+            "spanish": "Quitar todos",
+            "english": "Remove all"
+          },
+          "log-channel": {
+            "spanish": "Canales de registro",
+            "english": "Log channels"
+          },
+          "back": {
+            "spanish": "Atrás",
+            "english": "Go back"
+          }
+        },
+        "emoji": {
+          "spanish": "🇪🇸",
+          "english": "🇬🇧"
+        }
+      },
+      "select-menus": {
+        "placeholder": {
+          "lang": {
+            "spanish": "Selecciona un idioma.",
+            "english": "Select a language."
+          },
+          "color": {
+            "spanish": "Selecciona un color.",
+            "english": "Select a color."
+          },
+          "staffRole": {
+            "spanish": "Selecciona el rol(es).",
+            "english": "Select the rol(s)."
+          },
+          "blockChannel": {
+            "spanish": "Selecciona el canal(es).",
+            "english": "Select the channel(s)"
+          }
+        }
+      }
+    },
+    "$help.ts": {
+      "embeds": {
+        ".setDescription": {
+          "spanish": "En desarrollo",
+          "english": "In development"
+        }
+      }
+    },
+    "$user.info.ts": {
+      "embed": {
+        ".setAuthor": {
+          "spanish": "Información de: ",
+          "english": "Information of: "
+        },
+        ".addFields": {
+          "nickname": {
+            "spanish": "Apodo: ",
+            "english": "Nickname: "
+          },
+          "status": {
+            "spanish": "Estado: ",
+            "english": "Status: "
+          },
+          "joinedAt": {
+            "spanish": "Se unió: ",
+            "english": "Joined at: "
+          },
+          "createdAt": {
+            "spanish": "Creado en: ",
+            "english": "Created at: "
+          }
+        }
+      },
+      "altInfo": {
+        "none": {
+          "spanish": "Ninguno",
+          "english": "None"
+        },
+        "unknow": {
+          "spanish": "Desconocido",
+          "english": "Unknown"
+        },
+        "status": {
+          "spanish": "Desconectado",
+          "english": "Offline"
+        }
+      },
+      "error": {
+        "spanish": "> `🚨` Hubo un error consiguiendo la información del miembro.",
+        "english": "> `🚨` There was an error while fetching the member information."
+      }
+    },
+    "$guild.info.ts": {
+      "embed": {
+        ".setAuthor": {
+          "spanish": "Información de: ",
+          "english": "Information of: "
+        },
+        ".addFields": {
+          "users": {
+            "spanish": "Usuarios: ",
+            "english": "Users: "
+          },
+          "channels": {
+            "spanish": "Canales: ",
+            "english": "Channels: "
+          },
+          "roleList": {
+            "spanish": "Lista de roles: ",
+            "english": "Role list: "
+          },
+          "createdAt": {
+            "spanish": "Creado en: ",
+            "english": "Created at: "
+          },
+          "owner": {
+            "spanish": "Dueño: ",
+            "english": "Owner: "
+          },
+          "region": {
+            "spanish": "Región: ",
+            "english": "Region: "
+          }
+        }
+      },
+      "error": {
+        "spanish": "> `🚨` Hubo un error consiguiendo la información del servidor.",
+        "english": "> `🚨` There was an error while fetching the server information."
+      }
+    },
+    "$warn.ts": {
+      "respond": {
+        "firstWarn": {
+          "spanish": "> `🚨` <@${userWarn.id}> tiene `${warnRecord?.settings?.warns}` aviso.",
+          "english": "> `🚨` <@${userWarn.id}> has `${warnRecord?.settings?.warns}` warning."
+        },
+        "secondWarn": {
+          "spanish": "> `🚨` <@${userWarn.id}> tiene `${warnRecord?.settings?.warns}` avisos.",
+          "english": "> `🚨` <@${userWarn.id}> has `${warnRecord?.settings?.warns}` warnings."
+        },
+        "thirdWarn": {
+          "ban": {
+            "spanish": "Recibió 3 avisos",
+            "english": "Received 3 warnings"
+          },
+          "spanish": "> `⛔` <@${userWarn.id}> ha sido baneado al recibir `${warnRecord?.settings?.warns}` avisos.",
+          "english": "> `⛔` <@${userWarn.id}> has been banned because he received `${warnRecord?.settings?.warns}` warnings."
+        }
+      },
+      "error": {
+        "spanish": "> `⚠️` Hubo un error al procesar el aviso.",
+        "english": "> `⚠️` An error occurred while processing the warning."
+      }
+    },
+    "$warnings.ts": {
+      "embed": {
+        ".setAuthor": {
+          "spanish": "Avisos de ${userWarns.username}.",
+          "english": "Warns of ${userWarns.username}."
+        },
+        ".addFields": {
+          "warns": {
+            "spanish": "Aviso(s):",
+            "english": "Warn(s):"
+          },
+          "reason": {
+            "spanish": "Razón(ones):",
+            "english": "Reason(s):"
+          }
+        }
+      },
+      "responds": {
+        "warnDelete": {
+          "spanish": "El aviso **${warningIndexInt + 1}** ha sido eliminado. <@${userId}> ahora tiene ``${warnRecord.settings?.warns}`` aviso.",
+          "english": "Warning **${warningIndexInt + 1}** has been removed. <@${userId}> now has ``${warnRecord.settings?.warns}`` warning."
+        },
+        "noWarn": {
+          "spanish": "El aviso **${warningIndexInt + 1}** ha sido eliminado. <@${userId}> ya no tiene avisos.",
+          "english": "Warning **${warningIndexInt + 1}** has been removed. <@${userId}> now has no warnings."
+        }
+      },
+      "select-menu": {
+        "options": {
+          "spanish": "Aviso",
+          "english": "Warn"
+        },
+        "place-holder": {
+          "spanish": "Selecciona un aviso para eliminarlo.",
+          "english": "Select a warn to delete."
+        }
+      },
+      "error": {
+        "noWarns": {
+          "spanish": "> `❌` No se encontraron avisos para este usuario.",
+          "english": "> `❌` No warnings found for this user."
+        },
+        "genError": {
+          "spanish": "> `⚠️` Hubo un error al encontrar los avisos.",
+          "english": "> `⚠️` An error occurred while fetching warnings."
+        },
+        "updateError": {
+          "spanish": "> `⚠️` Hubo un error al actualizar los detalles de los avisos.",
+          "english": "> `⚠️` An error occurred while updating warning details."
+        }
+      }
+    },
+    "$ban.ts": {
+      "reply": {
+        "noMessageDelete": {
+          "spanish": "> `⛔` <@${userBan.id}> ha sido vetado por: `${reason}`.",
+          "english": "> `⛔` <@${userBan.id}> has been banned because: `${reason}`."
+        },
+        "MessageDelete": {
+          "spanish": "> `⛔` <@${userBan.id}> ha sido vetado y se han borrado sus mensajes porque: `${reason}`.",
+          "english": "> `⛔` <@${userBan.id}> has been banned and his/her messages has been deleted because: `${reason}`."
+        }
+      },
+      "guildBan": {
+        "spanish": "Vetado por ${int.user.username} - Razón: ${reason}",
+        "english": "Banned by ${int.user.username} - Reason: ${reason}"
+      },
+      "error": {
+        "errorBan": {
+          "spanish": "Hubo un fallo al vetar y borrar los mensajes del usuario.",
+          "english": "Failed to ban the user and delete messages."
+        },
+        "errorUser": {
+          "spanish": "El usuario especificado no pudo ser encontrado en el servidor.",
+          "english": "The specified user was not found in this server."
+        }
+      }
+    }
+  }
+}
